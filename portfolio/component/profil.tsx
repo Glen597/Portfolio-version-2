@@ -7,10 +7,28 @@ const Profil = () => {
 
             {/*greeting speech*/}
             <div className="flex flex-col ml-[3rem]">
-                <Hello />
+                <div>
+                        <Hello />
                 <p className="font-bold xl:text-7xl text-3xl ">I&apos;m <span className="italic text-yellow-400 underline">Benoit Mbole Ateba,</span>
                     <br />Software Engeneer<br />Based in Germany </p>
                 <p className="mt-[3rem] text-muted-foreground">I&apos;m an entry level Software Engineer with 2+ Years experience in the field collaborating in various open source projects and building personal projects.</p>
+                </div>
+
+                    <div className="flex items-center mt-[20]  ">
+                    <div className="flex items-center bg-[#FEB33B] rounded-full w-[200] h-12 ">
+                    <button className="rounded-full bg-green-900 px-3 my-6 text-white py-[10] ml-[2]">View My Portfolio</button>
+                    <a className="bg-white rounded-full ml-[9] "><Image
+                    src="/play-button.svg"
+                    alt="Play button"
+                    width={35}
+                    height={10}
+                    /></a>
+                </div>
+                <div className="pl-5 ">
+                    <button className=" border rounded-full border-solid border-green-900 px-[20] py-[10] text-green-900 font-medium ">Hire me</button>
+                </div>
+                    </div>
+           
             </div>
 
             {/*HProfil photo section*/}
