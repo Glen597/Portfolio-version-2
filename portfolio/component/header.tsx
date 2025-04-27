@@ -1,9 +1,11 @@
 import NavBar from "./navbar";
+import Profil from "./profil";
 
 const Header = () => {
     return ( 
-        <div className="h-full">
+        <div className="h-full bg-[#FAF8F4]">
             <NavBar/>
+            <Profil/>
         </div>
      );
 }
