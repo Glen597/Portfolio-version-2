@@ -1,21 +1,21 @@
 
 const DesignCategories = () => {
     return (
-        <div className="relative">
+        <div className="relative z-2">
             {/* Yellow banner with design categories */}
-            <div className="bg-[#FEB33B] py-4 flex justify-center items-center -z-10">
+            <div className="bg-[#FEB33B] py-4 flex justify-center items-center  text-3xl">
                 <ul className="flex space-x-8 text-green-900 font-medium">
                     <li className="flex items-center">
                         App Design
-                        <span className="mx-4 text-green-900">*</span>
+                        <span className="mx-4 text-green-900 ">*</span>
                     </li>
                     <li className="flex items-center">
                         Website Design
-                        <span className="mx-4 text-green-900">*</span>
+                        <span className="mx-4 text-green-900 ">*</span>
                     </li>
                     <li className="flex items-center">
                         Dashboard
-                        <span className="mx-4 text-green-900">*</span>
+                        <span className="mx-4 text-green-900 ">*</span>
                     </li>
                     <li className="flex items-center">
                         Wireframe
