@@ -15,6 +15,9 @@ export default function Home() {
     <section className="min-h-[720px] w-full">
       <ServicesPage/>
     </section>
+    <section className="min-h-[720px] w-full bg-green-900">
+
+    </section>
     </div>
   );
 }
