@@ -2,6 +2,7 @@
 import DesignCategories from "@/component/design-section";
 import Header from "@/component/header";
 import ServicesPage from "@/component/services";
+import AboutMe from "@/component/aboutme";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <ServicesPage/>
     </section>
     <section className="min-h-[720px] w-full bg-green-900">
-
+<AboutMe/>
     </section>
     </div>
   );
