@@ -13,12 +13,12 @@ export default function Home() {
       <section>
         <DesignCategories />
       </section>
-    <section className="min-h-[720px] w-full">
-      <ServicesPage/>
-    </section>
-    <section className="min-h-[720px] w-full bg-green-900">
-<AboutMe/>
-    </section>
+      <section className="min-h-[720px] w-full">
+        <ServicesPage />
+      </section>
+      <section className="min-h-[720px] w-full bg-green-900">
+        <AboutMe />
+      </section>
     </div>
   );
 }
