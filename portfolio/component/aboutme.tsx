@@ -1,56 +1,89 @@
-import Image from "next/image";
+import Image from "next/image"
 
-const AboutMe = () => {
+export default function AboutMe() {
     return (
-        <div className="flex flex-row items-center justify-around py-20">
-            <Image className=" rounded-full"
-                src={"/developerServices.png"}
-                alt="services Presentation"
-                width={700}
-                height={800}
-            />
-            <div className="flex flex-col items-center justify-between w-200">
-                <div className="flex items-center justify-items-start ml-[-100]">
-                    <div className="w-5 h-0.5 bg-yellow-500 mb-2"></div>
-                    <p className="ml-[2px]  text-4xl font-sans text-white ">About Me</p>
-                </div>
-                <p className="text-6xl font-bold text-white">Who is <span className="text italic text-yellow-400">Benoit Mbole Ateba</span></p>
-                <div className="text-xl text-white mt-[50px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book</div>
-                <div className="text-xl flex gap-x-20">
-                    <div className="flex flex-col">
-                        <p className="text-yellow-400 mt-[50px] text-5xl font-bold">10+</p>
-                        <p className="text-xl text-white">Project Completed</p>
-                    </div>
-                    <div className="flex flex-col">
-                        <p className="text-yellow-400 mt-[50px] text-5xl font-bold">20+</p>
-                        <p className="text-xl text-white">Industry Covered</p>
-                    </div>
-                    <div className="flex flex-col">
-                        <p className="text-yellow-400 mt-[50px] text-5xl font-bold">1+</p>
-                        <p className="text-xl text-white">Years Of experience</p>
-                    </div>
-                </div>
-                <div className="flex justify-between items-center mt-[50px] ">
-                    <div className="flex items-center bg-[#FEB33B] rounded-full w-[170] h-12  ">
-                        <button className="rounded-full bg-green-900 px-3 my-6 text-white py-[10] ml-[2] mt-[26]">Download cv</button>
-                        <a className="bg-white rounded-full ml-[9] ">
+        <div className=" text-white py-[8rem] px-4 md:px-8">
+            {/* Conteneur principal pour la section "About Me" */}
+            <div className="max-w-6xl mx-auto">
+                {/* Grille pour séparer l'image de profil et le contenu */}
+                <div className="grid grid-cols-1 md:grid-cols-2 md:gap-[8rem] gap-8 items-center">
+                    
+                    {/* Image de profil */}
+                    <div className="flex justify-center">
+                        <div className="rounded-full bg-[#f5a623] flex items-center justify-center overflow-hidden">
                             <Image
-                                src="/arrow.svg"
-                                alt="Play button"
-                                width={35}
-                                height={10}
+                                src="/developerServices.png"
+                                alt="Profile"
+                                className="object-cover w-[350px] h-[350px] md:w-[768px] md:h-[500px]"
+                                width={600}
+                                height={500}
+                                priority
                             />
-                        </a>
+                        </div>
                     </div>
-                    <p className="ml-[100] text-yellow-400 italic font-script text-4xl">Benoit Mbole Ateba</p>
+
+                    {/* Contenu textuel */}
+                    <div className="space-y-8">
+                        {/* Section "About Me" */}
+                        <div className="space-y-4">
+                            {/* Titre de la section */}
+                            <div className="flex items-center gap-2">
+                                <span className="w-6 h-0.5 bg-[#f5a623]"></span>
+                                <h2 className="text-xl">About Me</h2>
+                            </div>
+
+                            {/* Titre principal avec le nom */}
+                            <h1 className="text-3xl md:text-[2.6rem] font-bold">
+                                Who is <span className="text-[#f5a623] font-thin italic whitespace-nowrap">Benoit Mbole Ateba?</span>
+                            </h1>
+
+                            {/* Paragraphe descriptif */}
+                            <p className="text-gray-200">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.
+                            </p>
+                        </div>
+
+                        {/* Section des statistiques */}
+                        <div className="grid grid-cols-3 gap-4">
+                            <div>
+                                <h3 className="text-3xl md:text-4xl font-bold text-[#f5a623]">8+</h3>
+                                <p className="text-sm md:text-base">Project Completed</p>
+                            </div>
+                            <div>
+                                <h3 className="text-3xl md:text-4xl font-bold text-[#f5a623]">3+</h3>
+                                <p className="text-sm md:text-base">Industry Covered</p>
+                            </div>
+                            <div>
+                                <h3 className="text-3xl md:text-4xl font-bold text-[#f5a623]">2+</h3>
+                                <p className="text-sm md:text-base">Years of Experience</p>
+                            </div>
+                        </div>
+
+                        {/* Bouton pour télécharger le CV */}
+                        <div className="flex flex-wrap items-center gap-4 mt-8">
+                            {/* Conteneur du bouton avec l'arrière-plan jaune */}
+                            <div className="flex items-center bg-[#FEB33B] rounded-full w-[11rem] h-12 ">
+                                {/* Bouton vert pour télécharger le CV */}
+                                <button className="rounded-full bg-green-900 px-3 my-6 text-white py-[10] ml-[2] mt-[26]">Download CV</button>
+                                {/* Div blanche contenant l'icône de flèche */}
+                                <a className="bg-white rounded-full ml-[9] ">
+                                    <Image
+                                        src="/arrow.svg"
+                                        alt="Play button"
+                                        width={35}
+                                        height={10}
+                                    />
+                                </a>
+                            </div>
+                            {/* Nom stylisé sous le bouton */}
+                            <div className="m">
+                                <span className="text-[#f5a623] italic text-2xl font-script">Benoit Mbole Ateba</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-
-
             </div>
-        </div>)
+        </div>
+    )
 }
-
-export default AboutMe;
