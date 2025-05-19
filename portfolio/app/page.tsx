@@ -3,6 +3,8 @@ import DesignCategories from "@/component/design-section";
 import Header from "@/component/header";
 import ServicesPage from "@/component/services";
 import AboutMe from "@/component/aboutme";
+import Tools from "@/component/tools";
+import Education from "@/component/education";
 
 export default function Home() {
   return (
@@ -18,6 +20,12 @@ export default function Home() {
       </section>
       <section className="min-h-[600px] w-full bg-green-900">
         <AboutMe />
+      </section>
+      <section className="min-h-[720px] w-full bg-[#FFFFFF]">
+        <Tools/>
+      </section>
+      <section className="min-h-[720px] w-full">
+    <Education/>
       </section>
     </div>
   );
